@@ -59460,7 +59460,7 @@ lf(a){return this.Zb(a)},
 Zb(a){var s=0,r=A.a7(t.z),q=this,p
 var $async$lf=A.a8(function(b,c){if(b===1)return A.a4(c,r)
 while(true)switch(s){case 0:s=2
-return A.ah(A.at2(A.oW("https://test-weather-app-b1sq.onrender.com/api/weather/"+a)),$async$lf)
+return A.ah(A.at2(A.oW("http://localhost:3000/api/weather/"+a)),$async$lf)
 case 2:p=c
 if(p.b===200)q.az(new A.a4V(q,B.aU.Gt(0,A.asP(A.aqY(p.e).c.a.i(0,"charset")).cF(0,p.w),null)))
 else q.az(new A.a4W(q,p))
