@@ -2,11 +2,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 
 var weatherAPIRouter = require('./routes/weather');
 
 var app = express();
 
+app.use(cors({ origin: true, credentials: true }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
