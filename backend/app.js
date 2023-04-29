@@ -3,6 +3,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
+const PORT = process.env.PORT || 3000;
+
 
 var weatherAPIRouter = require('./routes/weather');
 
@@ -20,6 +22,6 @@ app.use('/api/weather', weatherAPIRouter);
 
 module.exports = app;
 
-app.listen(3000,(req,res)=>{
-    console.log('Server started at 3000');
+app.listen(PORT,(req,res)=>{
+    console.log('Server started at '+PORT);
 })
