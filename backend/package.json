@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon app.js",
-    "build": "npm i && npm audit fix --force && npm install nodemon"
+    "build": "npm i && npm audit fix --force && npm install nodemon && npm install cors"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
