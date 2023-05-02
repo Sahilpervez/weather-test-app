@@ -3,9 +3,9 @@ import 'package:temp_weather_app/weather-card.dart';
 import 'package:temp_weather_app/weather-data.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
-const WEATHER_API_URL = 'http://localhost:3000/api/weather/';
+// const WEATHER_API_URL = 'http://localhost:3000/api/weather/';
 
-// const WEATHER_API_URL = 'https://api.render.com/deploy/srv-ch6c9lo2qv26p1fn67ng?key=jFmdylRNrN4/api/weather/';
+const WEATHER_API_URL = 'https://test-weather-app-w4r9.onrender.com/api/weather/';
 // https://api.render.com/deploy/srv-ch6c9lo2qv26p1fn67ng?key=jFmdylRNrN4
 
 void main() => runApp(MyApp());
